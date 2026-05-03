@@ -1,0 +1,58 @@
+{
+  "id": "study",
+  "name": "Study",
+  "version": "0.1.0",
+  "min_omniget_version": "0.5.0",
+  "description": "Estude cursos baixados pelo omniget: biblioteca unificada, player com auto-resume, notas, flashcards (SRS), foco/pomodoro e progresso diário.",
+  "author": "tonhowtf",
+  "license": "GPL-3.0",
+  "homepage": "https://github.com/tonhowtf/omniget-plugin-study",
+  "icon": "assets/icon.png",
+  "rust_crate": "omniget_plugin_study",
+  "nav": [
+    {
+      "route": "/study",
+      "label": {
+        "en": "Study",
+        "pt": "Estudo",
+        "zh": "学习",
+        "zh-TW": "學習",
+        "ja": "学習",
+        "fr": "Étude",
+        "it": "Studio",
+        "el": "Μελέτη"
+      },
+      "icon_svg": "M22 10v6M2 10l10-5 10 5-10 5z M6 12v5c0 1.66 3 3 6 3s6-1.34 6-3v-5",
+      "group": "secondary",
+      "order": 45
+    },
+    {
+      "route": "/study/read",
+      "label": {
+        "en": "Read",
+        "pt": "Ler",
+        "zh": "阅读",
+        "zh-TW": "閱讀",
+        "ja": "読書",
+        "fr": "Lire",
+        "it": "Leggere",
+        "el": "Διαβάζω"
+      },
+      "icon_svg": "M4 4h6a3 3 0 0 1 3 3v13a2 2 0 0 0-2-2H4z M20 4h-6a3 3 0 0 0-3 3v13a2 2 0 0 1 2-2h7z",
+      "group": "secondary",
+      "order": 46
+    }
+  ],
+  "i18n": "i18n/",
+  "events": {
+    "progress": ["study:scan-progress"],
+    "complete": ["study:scan-complete", "study:rescan-complete", "study:course-completed", "study:milestone"]
+  },
+  "capabilities": [
+    "core:events",
+    "core:toast",
+    "core:settings",
+    "core:filesystem",
+    "core:tools"
+  ]
+}
