@@ -1,12 +1,12 @@
 {
   "id": "study",
   "name": "Study",
-  "version": "0.1.0",
-  "min_omniget_version": "0.4.0",
-  "description": "Ongoing not release yet, but working.",
+  "version": "0.3.0",
+  "min_omniget_version": "0.6.0",
+  "description": "Recursos de estudo: biblioteca de cursos, player com progresso, leitor de PDF/EPUB, notas e flashcards.",
   "author": "tonhowtf",
-  "license": "GPL-3.0",
-  "homepage": "https://github.com/tonhowtf/omniget-plugin-study",
+  "license": "Proprietary",
+  "homepage": "https://github.com/tonhowtf/omniget-study-release",
   "icon": "assets/icon.png",
   "rust_crate": "omniget_plugin_study",
   "nav": [
@@ -41,6 +41,38 @@
       "icon_svg": "M4 4h6a3 3 0 0 1 3 3v13a2 2 0 0 0-2-2H4z M20 4h-6a3 3 0 0 0-3 3v13a2 2 0 0 1 2-2h7z",
       "group": "secondary",
       "order": 46
+    },
+    {
+      "route": "/study/library",
+      "label": {
+        "en": "Library",
+        "pt": "Biblioteca",
+        "zh": "图书馆",
+        "zh-TW": "圖書館",
+        "ja": "ライブラリ",
+        "fr": "Bibliothèque",
+        "it": "Libreria",
+        "el": "Βιβλιοθήκη"
+      },
+      "icon_svg": "M4 4v16 M8 8v12 M12 6v14 M16 6l4 14",
+      "group": "secondary",
+      "order": 47
+    },
+    {
+      "route": "/study/music",
+      "label": {
+        "en": "Music",
+        "pt": "Música",
+        "zh": "音乐",
+        "zh-TW": "音樂",
+        "ja": "音楽",
+        "fr": "Musique",
+        "it": "Musica",
+        "el": "Μουσική"
+      },
+      "icon_svg": "M9 18V5l12-2v13 M6 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0-6 0 M18 16m-3 0a3 3 0 1 0 6 0a3 3 0 1 0-6 0",
+      "group": "secondary",
+      "order": 48
     }
   ],
   "i18n": "i18n/",
